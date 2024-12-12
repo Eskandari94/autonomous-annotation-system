@@ -1,0 +1,36 @@
+
+(cl:in-package :asdf)
+
+(defsystem "mh_hazard-srv"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils :geometry_msgs-msg
+               :sensor_msgs-msg
+               :std_msgs-msg
+)
+  :components ((:file "_package")
+    (:file "CLIP" :depends-on ("_package_CLIP"))
+    (:file "_package_CLIP" :depends-on ("_package"))
+    (:file "DetectSlot" :depends-on ("_package_DetectSlot"))
+    (:file "_package_DetectSlot" :depends-on ("_package"))
+    (:file "Indicate" :depends-on ("_package_Indicate"))
+    (:file "_package_Indicate" :depends-on ("_package"))
+    (:file "LLMImage" :depends-on ("_package_LLMImage"))
+    (:file "_package_LLMImage" :depends-on ("_package"))
+    (:file "LLMText" :depends-on ("_package_LLMText"))
+    (:file "_package_LLMText" :depends-on ("_package"))
+    (:file "MoveITGrabPose" :depends-on ("_package_MoveITGrabPose"))
+    (:file "_package_MoveITGrabPose" :depends-on ("_package"))
+    (:file "MoveITNamedPose" :depends-on ("_package_MoveITNamedPose"))
+    (:file "_package_MoveITNamedPose" :depends-on ("_package"))
+    (:file "MoveITPose" :depends-on ("_package_MoveITPose"))
+    (:file "_package_MoveITPose" :depends-on ("_package"))
+    (:file "OrientCamera" :depends-on ("_package_OrientCamera"))
+    (:file "_package_OrientCamera" :depends-on ("_package"))
+    (:file "SAM" :depends-on ("_package_SAM"))
+    (:file "_package_SAM" :depends-on ("_package"))
+    (:file "Servo" :depends-on ("_package_Servo"))
+    (:file "_package_Servo" :depends-on ("_package"))
+    (:file "TTS" :depends-on ("_package_TTS"))
+    (:file "_package_TTS" :depends-on ("_package"))
+    (:file "Whisper" :depends-on ("_package_Whisper"))
+    (:file "_package_Whisper" :depends-on ("_package"))
+  ))

@@ -1,0 +1,8 @@
+prefix=/home/mheskandari/catkin_ws/install
+
+Name: mh_hazard
+Description: Description of mh_hazard
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

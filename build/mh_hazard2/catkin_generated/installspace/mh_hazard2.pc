@@ -1,0 +1,8 @@
+prefix=/home/mheskandari/catkin_ws/install
+
+Name: mh_hazard2
+Description: Description of mh_hazard2
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

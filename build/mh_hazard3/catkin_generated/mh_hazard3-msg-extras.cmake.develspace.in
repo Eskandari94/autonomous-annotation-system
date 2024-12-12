@@ -1,0 +1,2 @@
+set(mh_hazard3_MESSAGE_FILES "")
+set(mh_hazard3_SERVICE_FILES "/home/mheskandari/catkin_ws/src/mh_hazard3/srv/LLMImage.srv;/home/mheskandari/catkin_ws/src/mh_hazard3/srv/LLMText.srv")

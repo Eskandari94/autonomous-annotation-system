@@ -1,0 +1,8 @@
+prefix=/home/mheskandari/catkin_ws/install
+
+Name: multirobot_map_merge
+Description: Description of multirobot_map_merge
+Version: 2.1.4
+Cflags: -I/usr/local/include/opencv4
+Libs: -L${prefix}/lib /usr/local/lib/libopencv_calib3d.a /usr/local/lib/libopencv_core.a /usr/local/lib/libopencv_dnn.a /usr/local/lib/libopencv_features2d.a /usr/local/lib/libopencv_flann.a /usr/local/lib/libopencv_gapi.a /usr/local/lib/libopencv_highgui.a /usr/local/lib/libopencv_imgcodecs.a /usr/local/lib/libopencv_imgproc.a /usr/local/lib/libopencv_ml.a /usr/local/lib/libopencv_objdetect.a /usr/local/lib/libopencv_photo.a /usr/local/lib/libopencv_stitching.a /usr/local/lib/libopencv_video.a /usr/local/lib/libopencv_videoio.a
+Requires: geometry_msgs map_msgs nav_msgs roscpp tf2_geometry_msgs
